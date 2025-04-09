@@ -1,0 +1,16 @@
+.navButton {
+  background: linear-gradient(145deg, var(--pink), var(--purple));
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  aspect-ratio: 1;
+}
+
+.navButton:hover {
+  background: linear-gradient(145deg, var(--purple), var(--pink));
+  transform: scale(1.1);
+}

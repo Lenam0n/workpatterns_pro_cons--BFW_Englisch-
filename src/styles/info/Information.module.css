@@ -1,0 +1,13 @@
+.informationPage {
+  padding: var(--spacing-lg);
+  background: #fff0f5; /* Lavender blush background */
+}
+
+.carouselWrapper {
+  height: 80vh; /* Approximately 80% of viewport height */
+  margin-top: var(--spacing-lg);
+  background: linear-gradient(145deg, #ffe6fa, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-md);
+}

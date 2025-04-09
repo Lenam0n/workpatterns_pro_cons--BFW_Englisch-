@@ -1,0 +1,11 @@
+.limitedCarousel {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  background: rgba(255, 182, 193, 0.2); /* Soft pastel pink overlay */
+  padding: var(--spacing-sm);
+  border-radius: 12px;
+  border: 1px dashed var(--hot-pink);
+}

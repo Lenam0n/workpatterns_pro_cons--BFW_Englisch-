@@ -1,0 +1,19 @@
+/* src/styles/global/AppLayout.module.css or similar */
+.appLayout {
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 90%;
+}
+
+.mainContent {
+  padding: var(--spacing-lg);
+  padding-top: 0;
+  padding-inline: var(--spacing-xlg);
+  margin-inline: auto;
+}

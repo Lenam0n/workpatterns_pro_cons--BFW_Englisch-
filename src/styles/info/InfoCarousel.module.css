@@ -1,0 +1,25 @@
+/* src/styles/info/InfoCarousel.module.css */
+.infoCarousel {
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(169, 169, 169, 0.15),
+    rgba(169, 169, 169, 0.15)
+  );
+  border: 2px solid var(--primary-color);
+  border-radius: var(--spacing-lg);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 87vh;
+  padding-block: var(--spacing-lg);
+}
+
+.infoCarouselContainer {
+  transform: rotate(90deg);
+  margin-block: auto;
+  top: 42vh;
+  position: absolute;
+  left: var(--spacing-neg4); /* Replaced calc with dedicated variable */
+}

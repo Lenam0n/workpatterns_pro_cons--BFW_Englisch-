@@ -1,0 +1,46 @@
+/* src/styles/info/CircleItem.module.css */
+.circleItem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--item-size);
+  height: var(--item-size);
+  background: linear-gradient(135deg, var(--hot-pink), var(--purple));
+  color: var(--text-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translate(var(--translate-x), var(--translate-y));
+  z-index: 10;
+}
+
+.circleItem:hover {
+  z-index: 10;
+  transform: translate(var(--translate-x), var(--translate-y))
+    scale(var(--hover-scale));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.itemContent {
+  width: 80%; /* Reduced width to leave room for padding */
+  height: 80%; /* Reduced height to include padding inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
+  overflow: hidden;
+  line-height: 1.2;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  transform: rotate(var(--rotate-counter));
+  color: var(--text-accent-color);
+  font-weight: bold;
+}
