@@ -16,13 +16,10 @@
   - [Usage](#usage)
     - [Navigating the Carousel:](#navigating-the-carousel)
     - [Viewing Details in the Modal:](#viewing-details-in-the-modal)
-    - [Custom Scrollbar:](#custom-scrollbar)
   - [Customization](#customization)
     - [Component Behavior:](#component-behavior)
     - [Data Source:](#data-source)
   - [Contributing](#contributing)
-  - [License](#license)
-  - [Contact](#contact)
 
 ## Features
 
@@ -63,11 +60,12 @@ src/
 │   │   ├── DirectionButton.tsx
 │   │   ├── NavigationSidebar.tsx
 │   │   ├── CustomListItem.tsx
-│   │   └── NoScrollWrapper.tsx
 │   └── info/
-│       ├── InfoCarousel.tsx
-│       ├── InfoModal.tsx
-│       └── InfoColumn.tsx
+│   │   ├── InfoCarousel.tsx
+│   │   ├── InfoModal.tsx
+│   │   └── InfoColumn.tsx
+│   └── wrapper/
+│       └── NoScrollWrapper.tsx
 ├── hooks/
 │   └── useInfoData.ts
 ├── interfaces/
@@ -81,8 +79,6 @@ src/
 │   ├── info/
 │   │   ├── InfoModal.module.css
 │   │   └── InfoColumn.module.css
-│   └── wrapper/
-│       └── NoScrollWrapper.module.css
 ├── App.tsx
 └── index.tsx
 ```
@@ -92,15 +88,15 @@ src/
 #### 1. Clone the Repository:
 
    ```bash
-   git clone https://github.com/yourusername/work-patterns-carousel.git
-   cd work-patterns-carousel
+   git clone https://github.com/Lenam0n/workpatterns_pro_cons--BFW_Englisch-.git
+   cd workpatterns_pro_cons--BFW_Englisch-
    ```
 
 #### 2. Install Dependencies:
 
 ```bash
 npm install
-# or, if you use Yarn
+# or:
 yarn install
 ```
 
@@ -132,26 +128,19 @@ Use the left/right buttons (in the unified sidebar) to switch between work patte
 
 - Scrolling via mouse wheel or touch swipe is disabled; users must use the native scrollbar for manual scrolling.
 
-### Custom Scrollbar:
-
-The scrollable lists have a custom-styled scrollbar that fits the overall color scheme.
-
 ## Customization
 Theme & Colors:
-Modify the CSS variables in the global ``:root`` (in your index.css) to adjust the color palette, spacing, fonts, and animation durations.
+Modify the CSS variables in the global ``:root`` (in your index.css) to adjust the *color palette*, *spacing*, *fonts*, and *animation durations*.
 
 ### Component Behavior:
-The application is highly modular. You can adjust or extend components like the ``NoScrollWrapper``, ``NavigationSidebar``, or ``InfoModal`` to meet new design or functionality requirements.
+> The application is highly modular. 
+
+You can adjust or extend components like the ``NoScrollWrapper``, ``NavigationSidebar``, or ``InfoModal`` to meet new design or functionality requirements.
 
 ### Data Source:
 The work pattern data is handled by the useInfoData hook. Update it to fetch real data from an API if needed.
 
 ## Contributing
-Contributions are welcome!
+> Contributions are welcome!
+
 If you have suggestions or improvements, please open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For any inquiries or questions, please contact <your.email@example.com>.
